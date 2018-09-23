@@ -304,4 +304,19 @@ class Section2Chapter1{
         }
         return rotated
     }
+
+    //Question 7
+    //Same As Question 7 from the previous Section
+    
+    //Question 8
+    isRotation(str1,str2){
+        str1 = str1.sort()
+        str2 = str2.sort()
+        return isSubString(str1,str2)
+    }
+}
+
+class Section2Chapter2{
+
+    //Question 1
 }
