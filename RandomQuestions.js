@@ -268,7 +268,17 @@ class Section2Chapter1{
 
     //Question 4
     isAnagram(str1,str2){
-
+        if (str1.length != str2.length) {
+            return false
+        }
+        var i = str2.length
+        for (let index = 0; index < str1.length; index++) {
+            if (str1[index] != str2[i]) {
+                return false
+            }
+            i--
+        }
+        return true
     }
 
     //Question 5
@@ -283,6 +293,6 @@ class Section2Chapter1{
     
     //Question 6
     rotateImage(arr){
-        
+
     }
 }
