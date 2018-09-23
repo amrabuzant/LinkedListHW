@@ -293,6 +293,15 @@ class Section2Chapter1{
     
     //Question 6
     rotateImage(arr){
-
+        var rotated = new Array(arr)
+        var index = arr.length
+        for (let x = 0; x < array.length; x++) {
+            const element = array[x];
+            for (let y = 0; y < element.length; y++) {
+                rotated[y][index] = element[y];
+            }
+            index--
+        }
+        return rotated
     }
 }
